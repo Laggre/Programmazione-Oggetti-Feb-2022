@@ -51,10 +51,43 @@ periodo | ogni periodo di tempo desiderato
 Per effettuare il test in JUnit sono stati utilizzati i seguenti metodi nella per ogni sua specifica classe
 
 ### Test Metodi Della Classe MinMaxAverageFilter.java
+Per il testing dei metodi della classe MinMaxAverageFilter.java sono stati implementati i seguenti JUnit Test Case:
+
+**1) dateConverterTest**
+
+La JUnit Test Case 'dateConverterTest' contiene due test methods che verificano il corretto funzionamento del metodo dateConverter() dedito alla conversione di una stringa di testo in un oggetto della classe localDate;
+in particolare:
+* **testDateConverter():** Metodo per testing del metodo dateConverter(); che invoca il metodo assertEquals(), i cui parametri sono il risultato della conversione tramite il metodo dateConverter e l'oggetto di tipo LocalDate ante introdotto.
+* **testDateConverterException():** Metodo per testing del metodo dateConverter(); che invoca il metodo assertThrows(), i cui parametri sono il risultato della conversione tramite il metodo dateConverter e la classe "DateTimeParseException.class" della libreria "java.time.format".
+
+**2) MaxRipetizioneDelPeriodoTest**
+La JUnit Test Case 'MaxRipetizioneDelPeriodoTest' contiene un unico test method, che verifica il corretto funzionamento del metodo maxRipetizioneDelPeriodo() che, a sua volta, è dedito al calcolo del numero di volte in cui il periodo personalizzato inserito dall'utente può essere ripetuto nell'arco di un anno;
+in particolare:
+* **maxRipetizioneDelPeriodoTest()** Metodo per testing del metodo maxRipetizioneDelPeriodo; che invoca il metodo assertEquals(), i cui parametri sono il risultato del metodo maxRipetizioneDelPeriodo() ed il numero di volte in cui, effettivamente, il periodo personalizzato si ripete nel corso di un anno.
+
+**3) MinMaxAverageFilterFunctionTest**
+La JUnit Test Case 'MinMaxAverageFilterFunctionTest' contiene un unico test method, che verifica il corretto funzionamento del metodo minMaxAverageFilterFunction() che, a sua volta, è dedito al calcolo del numero totale di eventi, relativi ad uno specifico Stato, che si svolgono in una specifica ripetizione del periodo di tempo personalizzato scelto dall'utente;
+in particolare:
+* **testMinMaxAerageFilterFunction()** Metodo per testing del metodo minMaxAverageFilterFunction che invoca il metodo assertEquals(), i cui parametri sono il risultato del metodo minMaxAverageFilterFunction() ed il corretto raggruppamento di eventi-periodo.
 
 ### Test Metodi Della Classe DatesStatistics.java
+Per il testing dei metodi della classe DatesStatistics.java è stato implementato il seguente JUnit Test Case:
+
+**1) DatesStatisticsTest**
+La JUnit Test Case 'DatesStatisticsTest' contiene due test methods, che verificano il corretto funzionamento del metodo numeroEventi() che, a sua volta, è dedito al calcolo del numero totale di eventi, relativi ad uno specifico Stato, che si svolgono in uno specifico mese;
+in particolare:
+
+* **datesStatisticsTest():** Metodo per testing del metodo numeroEventi() che invoca il metodo assertEquals(), i cui parametri sono il risultato del metodo numeroEventi() ed il corretto raggruppamento di eventi-mese.
+* **datesStatisticsTestNotNull():** Metodo che accerta che il vettore contenente gli eventi da raggruppare mensilmente non sia sia vuoto, invoca il metodo assertNotNull(), il cui unico parametro è il vettore di eventi da analizzare.
 
 ### Test Metodi Della Classe MinMaxAverage.java
+Per il testing dei metodi della classe MinMaxAverage.java è stato implementato il seguente JUnit Test Case:
+
+**1) SortSelectedEventsTest**
+La JUnit Test Case 'SortSelectedEventsTest' contiene un'unico test Method, che verifica il corretto funzionamento del metodo sortSelectedEvents() che, a sua volta, è dedito all'ordinamento dell'array contenente il numero di eventi di uno Stato, svoltisi in un determinato mese, disponendoli dal più piccolo al più grande;
+in particolare:
+
+* **sortSelectedEventsTest():** Metodo per testing del metodo sortSelectedEvents, invoca il metodo assertEquals(), i cui parametri sono il risultato del metodo sortSelectedEvents ed un array ordinato nel modo corretto.
 
 ## Documentazione JavaDoc
 
