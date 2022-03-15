@@ -2,7 +2,7 @@
 <H4 align="center">Progetto programmazione ad Oggetti febbraio 2022</H4>
 
 ## Introduzione:
-La nostra applicazione sfrutta le API della pagina TM Developer, del software "TicketMaster", fornite nell'apposita pagina "The Ticketmaster Developer Portal" per realizzare un filtro specifico di eventi. In particolare il programma può essere utilizzato solamente per eventi in Australia e Nuova Zelanda.
+La nostra applicazione sfrutta le API della pagina TM Developer, del software "TicketMaster", fornite nell'apposita pagina "The Ticketmaster Developer Portal" per realizzare un filtro specifico di eventi. In particolare il programma può essere utilizzato solamente per  eventi in alcuni paesi degli Stati Uniti.
 Il programma genera statistiche in base alla ricerca degli eventi ed ha le seguenti funzioni:
 * filtraggio degli eventi selezionando almeno uno Stato e generazione di statistiche relative.
 * filtraggio degli eventi selezionando almeno un genere e generazione di statistiche relative.
