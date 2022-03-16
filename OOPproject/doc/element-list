@@ -1,0 +1,10 @@
+it.univpm.OPPproject
+it.univpm.OPPproject.api
+it.univpm.OPPproject.Controller
+it.univpm.OPPproject.DateStats.Test
+it.univpm.OPPproject.exception
+it.univpm.OPPproject.Filters
+it.univpm.OPPproject.model
+it.univpm.OPPproject.Parser
+it.univpm.OPPproject.scanner
+it.univpm.OPPproject.Stats
