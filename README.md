@@ -26,6 +26,12 @@ Eseguito questo passaaggio basta semplicemente aprire il progetto da Eclipse e a
 ## Rotte
 Per comunicare con il software l'utende deve utilizzare il servizio di Postman, all'indirizzo: "localhost:8080"; dove è necessario specificare il metodo di trasferimento dati e la rotta.
 
+### Filtri e Stats Richiesti
+Per l'invio dei parametri e quindi del filtraggio degli eventi ci è necessario solamente una rotta, cioè:
+Metodo | Rotta | Descrizione
+---- | ---- | ----
+POST | /eventi | restituisce un JSONArray contenente le statistiche (minimo, massimo e madia degli eventi nel periodo selezionato) e lista degli eventi di uno stato o paese.
+
 ### Body della rotta e risposta JSON
 I parametri su cui effettuare il filtraggio e le statistiche vengono dati a Spring tramite la rotta "localhost8080/eventi" in JSON, formato "raw", contenente le coppie di "key-value"; come segue in esempio:
 ```json
@@ -137,11 +143,10 @@ Tramite il metodo GET, la rotta http://localhost:8080/generi restituisce la list
 
 Ovvero, otteniamo un JSONArray composto da tutti i possibili generi utilizzabili per il filtraggio degli eventi.
 
-## Filtri e Stats Richiesti
-Per l'invio dei parametri e quindi del filtraggio degli eventi ci è necessario solamente una rotta, cioè:
 Metodo | Rotta | Descrizione
 ---- | ---- | ----
-POST | /eventi | restituisce un JSONArray contenente: statistiche (minimo, massimo e madia degli eventi nel periodo selezionato) e lista degli eventi di uno stato o paese.
+GET | /stati | restituisce una lista JSON contenente la lista degli stati.
+GET | /generi | restituisce una lista JSON contenente la lista dei generi.
 
 ## Chiavi e valori
 Le coppie di chiavi e valori che devono essere specificate, cioè i parametri in ingresso da inserire su postman sono:
@@ -178,6 +183,7 @@ in particolare:
 * **dateStatsTestNN():** Metodo che accerta che il vettore contenente gli eventi da raggruppare mensilmente non sia sia vuoto, invoca il metodo assertNotNull(), il cui unico parametro è il vettore di eventi da analizzare.
 
 ## Documentazione JavaDoc
+Per la documentazione JavaDoc bisogna aprire il file "index.html", seguendo il percorso: OPPproject > doc > index.html
 
 ## Software Utilizzati
 * L'IDE Eclipse
